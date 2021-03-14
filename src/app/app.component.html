@@ -1,12 +1,6 @@
-<div>
-  <input [(ngModel)]="nombre">
-  
-  <p>A que tu nombre es: {{nombre}}</p>
-  </div>
-  
-  <div>
-    <p>Esta es otra forma de bind: un sólo flujo</p>
-    <div><input [ngModel]="apellido"></div>
-    <div>Tu apellido es 🤔 {{apellido}}</div>
-    
-  </div>
+<input type="text" [(ngModel)]="title">
+{{ title }}
+
+<div *ngIf="title === 'nicolas'">
+  este es un div
+</div>
