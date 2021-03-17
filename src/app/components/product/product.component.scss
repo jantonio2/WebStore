@@ -1,9 +1,68 @@
 :host {
-    margin: 2px;
-    border: 1px solid black;
+    border: 1px solid #333;
+    margin: 5px;
+    padding: 10px;
     border-radius: 5px;
     display: block;
-}
-img {
+    position: relative;
+  }
+  
+  .product-img {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  
+    &-success {
+      color: #fff;
+      background: linear-gradient(270deg,#95ca3e 0,#95ca3e 50%,#85c638);
+      border-bottom: 5px solid #a4cc63;
+    }
+    &-success:hover {
+      transition: 0.2s;
+      box-shadow: 0 2px 13px 0 rgba(88,144,45,.49);
+    }
+  
+    &-danger {
+      color: #fff;
+      background: #a32b1e;
+      border-bottom: 5px solid #c23f31;
+    }
+    
+    &-danger:hover {
+      box-shadow: 0 2px 13px 0 rgba(163, 43, 30, .49);
+      transition: 0.2s;
+    }
+  
+    &-block {
+      display: block;
+      width: 100%;
+    }
+  
+  }
+  
+  .ctn {
+    text-align: center;
+  }
+  
+  .type {
+    padding: 5px 15px;
+    font-weight: 700;
+  }
+  
+  .mr-3 {
+    margin-right: 3em;
+  }
+  
+  .img-fluid {
     max-width: 100%;
-}
+    height: auto;
+  }
