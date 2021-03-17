@@ -30,6 +30,10 @@
   </li>
 </ul>
 
-<div *ngFor="let product of products">
-  <app-route (productClicked)="clickProduct($event)" [product]="product"></app-route>
+<div class="product-grid"> 
+  <app-route 
+  *ngFor="let product of products" 
+  (productClicked)="clickProduct($event)" 
+  [product]="product">
+  </app-route>
 </div>
