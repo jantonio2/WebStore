@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
-
-
 import { DemoComponent } from './demo/demo.component';
 import { LayoutComponent } from './layout/layout.component';
+
+import { AdmiGuard } from './core/guards/admi.guard'
 
 const routes: Routes = [
   {
@@ -27,6 +27,7 @@ const routes: Routes = [
       
       {
         path: 'contact',
+        canActivate: [AdmiGuard],
         loadChildren: () => import('./contact/contact.module').then(m => m.ProductsModule)
       },
     ]
