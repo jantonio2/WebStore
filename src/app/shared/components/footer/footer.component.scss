@@ -1,0 +1,44 @@
+@import '~@angular/material/theming';
+
+$primary: mat-palette($mat-indigo);
+
+footer {
+  padding: 50px 0px;
+  margin-top: 20px;
+  background-color: mat-color($primary);
+  .box {
+    h3 {
+      color: white;
+      display: inline-flex;
+          vertical-align: middle;
+          mat-icon{
+              padding-right: 5px;
+          }
+    }
+    input{
+      color: white;
+    }
+    ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      li {
+        margin: 10px 0px;
+        a {
+          text-decoration: none;
+          color: white;
+          display: inline-flex;
+          vertical-align: middle;
+          mat-icon{
+              padding-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-row{
+    width: auto;
+    margin-left: 15rem;
+}

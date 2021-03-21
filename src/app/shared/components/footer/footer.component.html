@@ -1,1 +1,48 @@
-<p>footer works!</p>
+<footer>
+  <div class="row footer-row">
+    <div class="col-xs-12 col-md-4">
+      <div class="box align-middle">
+        <h3>Productos</h3>
+        <ul>
+          <li>
+            <!-- <a routerLink="/products" [queryParams]="{ type: ‘news’ }"> -->
+            <a routerLink="/products">
+            <mat-icon>fiber_new</mat-icon> Nuevos Productos</a>
+          </li>
+          <li>
+            <!-- <a routerLink="/products" [queryParams]="{ type: ‘offer’ }"> -->
+            <a routerLink="/products">
+            <mat-icon>local_offer</mat-icon> En oferta</a>
+          </li>
+          <li>
+            <!-- <a routerLink="/products" [queryParams]="{ type: ‘latest’ }"> -->
+            <a routerLink="/products">
+            <mat-icon>schedule</mat-icon> Últimos productos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div class="box">
+        <h3>Acerca de WebStore</h3>
+        <ul>
+          <li>
+            <a routerLink="/about-us"><mat-icon>face</mat-icon> Sobre nosotros</a>
+          </li>
+          <li>
+            <a routerLink="/stores"><mat-icon>store</mat-icon> Nuestras tiendas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div class="box">
+        <h3><mat-icon>email</mat-icon> Contacto</h3>
+      <!-- <mat-form-field color="accent" class="full-width">
+          <input [formControl]="emailInput" matInput placeholder="Su correo" type="email">
+        </mat-form-field>
+        <button (click)="registerMail()" [disabled]="emailInput.invalid" mat-raised-button color="accent">Suscribirse</button> -->
+      </div>
+    </div>
+  </div>
+</footer>
