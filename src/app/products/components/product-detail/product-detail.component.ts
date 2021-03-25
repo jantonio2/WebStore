@@ -33,4 +33,18 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
+  createProduct(){
+    const newProduct: Product= {
+      id: '222',
+      title: 'nuevo desde angular',
+      image: 'assets/images/Daenerys.jpg',
+      price: 3000,
+      description: 'Daenerys y Drogon'
+    };
+    this.productsService.createProduct(newProduct)
+    .subscribe(product => {
+      console.log(product);
+    });
+  }
+
 }
