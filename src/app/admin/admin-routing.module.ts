@@ -5,6 +5,7 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { NavComponent } from './components/nav/nav.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ListProductsComponent } from './components/list-products/list-products.component'
+import { ProductListComponent } from './components/product-list/product-list.component'
 
 const routes: Routes = [
   {
@@ -12,7 +13,7 @@ const routes: Routes = [
     component: NavComponent,
     children:[
       {
-        path: 'dashboard',
+        path: '',
         component: DashboardComponent
       },
       {
@@ -20,8 +21,12 @@ const routes: Routes = [
         component: ProductFormComponent
       },
       {
-        path: 'list',
+        path: 'table',
         component: ListProductsComponent
+      },
+      {
+        path: 'products',
+        component: ProductListComponent
       }
     ]
   } 
