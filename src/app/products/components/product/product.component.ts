@@ -9,7 +9,7 @@ import {
   DoCheck, 
   OnDestroy 
 } from '@angular/core';
-import { Product } from 'src/app/product.model';
+import { Product } from 'src/app/shared/models/product.model';
 
 @Component({
   selector: 'app-route',
