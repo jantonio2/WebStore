@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
+import { Product } from 'src/app/shared/models/product.model';
 
+import { environment } from './../../../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
@@ -11,10 +13,10 @@ export class ProductsService {
   
 
   getAllProducts() {
-    return this.http.get<any>('http://platzi-store.herokuapp.com/products');
+    return this.http.get<Product[]>(`${environment.url_api}/products/`);
   }
 
   getProduct(id: string) {
-    return this.http.get(`http://platzi-store.herokuapp.com/products/${id}`);
+    return this.http.get<Product>(`${environment.url_api}/products/${id}`);
   }
 }
