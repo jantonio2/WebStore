@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url_api: 'http://platzi-store.herokuapp.com',
+  url_api: 'https://platzi-store.herokuapp.com',
   firebaseConfig: {
     apiKey: "AIzaSyA1uwXSeSpuY4Njegqhrx8GqP3lXCOIMWI",
     authDomain: "web-store-aa662.firebaseapp.com",
