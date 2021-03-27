@@ -9,18 +9,24 @@ import { ExponentialPipe } from './pipes/exponential/exponential.pipe';
 import { HighlightDirective } from './directives/highlight/highlight.directive';
 
 import { MaterialModule } from './../material/material.module';
+import { GroupByProductPipe } from './pipes/group-by-product/group-by-product.pipe';
+import { CountingProductsPipe } from './pipes/counting-products/counting-products.pipe';
 @NgModule({
   declarations: [
     ExponentialPipe,
     HighlightDirective,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    GroupByProductPipe,
+    CountingProductsPipe
   ],
   exports: [
     ExponentialPipe,
     HighlightDirective,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    GroupByProductPipe,
+    CountingProductsPipe
   ],
   imports: [
     CommonModule, 

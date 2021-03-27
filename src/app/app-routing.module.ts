@@ -29,6 +29,10 @@ const routes: Routes = [
         canActivate: [AdmiGuard],
         loadChildren: () => import('./contact/contact.module').then(m => m.ProductsModule)
       },
+      {
+        path: 'order',
+        loadChildren: () => import('./order/order.module').then(m => m.OrderModule)
+      },
     ]
   },
   {
