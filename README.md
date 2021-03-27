@@ -1,5 +1,5 @@
 # WebStore
-<<<<<<< HEAD
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
 
@@ -28,4 +28,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 =======
 A simple page store made with Angular 
->>>>>>> d03e338f48b6f86ac5f554d99fa775539fb52382
