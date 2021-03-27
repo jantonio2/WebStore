@@ -9,10 +9,11 @@ import { MaterialModule } from './../material/material.module';
 import { NavComponent } from './components/nav/nav.component';
 import { ListProductsComponent } from './components/list-products/list-products.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { ProductListComponent } from './components/product-list/product-list.component'
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { FormProductComponent } from './components/form-product/form-product.component'
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, ListProductsComponent, DashboardComponent, ProductListComponent],
+  declarations: [ProductFormComponent, NavComponent, ListProductsComponent, DashboardComponent, ProductListComponent, FormProductComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
